@@ -24,3 +24,11 @@ YOUR-GITHUB-USERNAME.github.io
 
 Then enable GitHub Pages from:
 Settings > Pages > Deploy from a branch > main > /(root)
+
+
+## v8 Contact update
+- Added public email: aryalanupme@gmail.com
+- Added public phone: +977 9840054222
+- Added WhatsApp direct-message link
+- Added LinkedIn profile link
+- Contact form intentionally not added yet.
