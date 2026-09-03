@@ -1246,3 +1246,48 @@ h3{font-size:clamp(1.25rem,1.9vw,1.8rem);line-height:1.18}
   border-top: none !important;
   box-shadow: none !important;
 }
+
+/* ===============================================================
+   v9 GREENHOUSE DRYER - MULTI-PROJECT FIELD WORK
+   =============================================================== */
+.ghd-project-index{padding:26px 0 34px;background:var(--surface);border-bottom:1px solid var(--line)}
+.ghd-project-index-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.ghd-project-index-grid a{padding:18px;border:1px solid var(--line);border-radius:15px;background:var(--bg);transition:.2s ease}
+.ghd-project-index-grid a:hover{transform:translateY(-3px);background:#fffdf9}
+.ghd-project-index-grid span{display:block;color:var(--accent2);font-size:.68rem;font-weight:800;letter-spacing:.1em;margin-bottom:12px}
+.ghd-project-index-grid strong{display:block;font-family:Georgia,"Times New Roman",serif;font-size:1.08rem;font-weight:500;line-height:1.25}
+.ghd-project-index-grid small{display:block;margin-top:7px;color:var(--muted);line-height:1.4}
+.ghd-field-case{scroll-margin-top:86px;background:var(--surface)}
+.ghd-field-case.ghd-alt{background:var(--bg)}
+.ghd-field-case .case-head{margin-bottom:32px}
+.ghd-field-gallery{display:grid;grid-template-columns:1.15fr .85fr;gap:16px;margin:20px 0 88px}
+.ghd-field-gallery figure{overflow:hidden;border-radius:18px}
+.ghd-field-gallery img{width:100%;height:390px;object-fit:cover}
+.ghd-field-gallery figure:first-child{grid-row:span 2}
+.ghd-field-gallery figure:first-child img{height:796px}
+.ghd-field-gallery figcaption,.ghd-community-gallery figcaption,.ghd-operation-photo figcaption{padding-top:10px;color:var(--muted);font-size:.8rem;line-height:1.55}
+.ghd-field-gallery figcaption strong,.ghd-community-gallery figcaption strong,.ghd-operation-photo figcaption strong{color:var(--ink)}
+.ghd-operation-photo{margin:0 0 92px}
+.ghd-operation-photo img{width:100%;max-height:720px;object-fit:cover;border-radius:20px}
+.ghd-community-gallery{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:22px 0 90px}
+.ghd-community-gallery figure{min-width:0}
+.ghd-community-gallery img{width:100%;height:430px;object-fit:cover;border-radius:18px}
+.ghd-contrast{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px;align-items:center;margin:0 0 88px;padding:48px;border:1px solid var(--line);border-radius:24px;background:var(--bg)}
+.ghd-contrast h2{margin-top:5px}
+.ghd-contrast>p{color:var(--muted)}
+.modi-feature{margin-top:40px}
+.modi-feature figure img{height:520px}
+@media(max-width:950px){
+  .ghd-project-index-grid{grid-template-columns:1fr 1fr}
+  .ghd-field-gallery{grid-template-columns:1fr 1fr}
+  .ghd-field-gallery figure:first-child{grid-column:1/-1;grid-row:auto}
+  .ghd-field-gallery figure:first-child img{height:520px}
+  .ghd-contrast{grid-template-columns:1fr}
+}
+@media(max-width:650px){
+  .ghd-project-index-grid,.ghd-field-gallery,.ghd-community-gallery{grid-template-columns:1fr}
+  .ghd-field-gallery figure:first-child{grid-column:auto}
+  .ghd-field-gallery img,.ghd-field-gallery figure:first-child img,.ghd-community-gallery img{height:auto;max-height:480px}
+  .ghd-contrast{padding:30px 24px}
+  .modi-feature figure img{height:auto}
+}
