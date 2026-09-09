@@ -1,29 +1,12 @@
-# Anup Aryal Portfolio — September 2026 Build
+# Anup Aryal — reviewed website
 
-This package contains the current website code and existing site assets.
+All 25 revised practice PDFs are included at the paths used by the website. The 25 matching answer pages are included too. The handbook remains an HTML reader; no downloadable handbook file is published.
 
-## Major changes in this build
-- Added a dedicated SAT Math Handbook web reader (`sat-handbook.html`). The handbook PDF/DOCX is **not** published in the site package.
-- Added a structured SAT Practice Library and four domain pages.
-- Practice cards do not show fixed question counts.
-- Added stable asset paths so practice PDFs can be replaced later without changing the HTML.
-- Removed temporary/fake testimonial placeholders.
-- Replaced development-stage Solar Water Lifting copy with public-facing text.
-- Added JavaScript-failure fallback for reveal animations and mobile navigation.
-- Improved mobile navigation, keyboard accessibility, focus states and Escape-to-close behavior.
-- Added lazy image loading, a 404 page, favicon, canonical links, Open Graph metadata, `robots.txt`, `sitemap.xml`, and Person structured data on the homepage.
-- Added responsive handling for handbook tables and MathML.
+## Publish
+Copy the contents of this Website folder into the existing website repository, keeping the asset folders intact. The canonical URLs and worksheet answer URLs retain the existing aryalanupe.github.io domain. If moving domains, update those URLs and regenerate the QR codes.
 
-## Before publishing SAT practice PDFs
-Read `ADD_SAT_FILES_BEFORE_DEPLOYING.txt` and copy only the final public PDFs into the listed `assets/sat-resources/...` folders.
+## Update a chapter
+Edit its Word master in the separate Editable_Chapters package, export a new PDF, and replace the matching file under assets/sat-resources using the same filename. Update the matching sat-*.html answer page whenever questions or numbering change. DOCX masters do not belong in the public website folder.
 
-The website intentionally does not require public DOCX files. Keep your editable DOCX masters privately unless you want visitors to download them.
-
-## Handbook visibility
-The handbook is rendered as HTML on `sat-handbook.html`. There is no PDF download link and the handbook PDF is not included in this package. This reduces casual file redistribution, but content shown on a public website can still be copied, printed, screenshotted, or saved. GitHub Pages does not provide DRM or authenticated document access.
-
-## Deployment
-1. Copy this package over the existing site folder.
-2. Add final SAT practice PDFs at the exact paths listed in `ADD_SAT_FILES_BEFORE_DEPLOYING.txt`.
-3. Test locally with Live Server.
-4. Commit and push to the GitHub Pages repository.
+## Final deployment checks
+After publishing, test the mobile menu, keyboard navigation, handbook formulas and scrolling tables on your actual browsers; open all four resource categories and scan a worksheet QR code. This revision was checked through source inspection, local link validation and document rendering; live browser/device verification remains to be done.

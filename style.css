@@ -1418,3 +1418,33 @@ img{height:auto}
 .js .reveal.reveal-ready{opacity:0!important;transform:translateY(15px)!important;transition:.55s ease}
 .js .reveal.reveal-ready.visible{opacity:1!important;transform:none!important}
 .no-js .reveal{opacity:1!important;transform:none!important;transition:none!important}
+
+/* September review: readable navigation, stable content and compact answer checks. */
+:root{--muted:#606970}
+html{scroll-padding-top:100px}
+[id]{scroll-margin-top:100px}
+.reveal,.js .reveal,.js .reveal.reveal-ready{opacity:1!important;transform:none!important}
+.menu-toggle{min-width:44px;min-height:44px;cursor:pointer;color:var(--ink)}
+#mainNav a{min-height:44px;display:flex;align-items:center}
+.hero-grid>*,.split>*,.story-grid>*,.case-head>*,.feature-grid>*{min-width:0}
+h1,h2,h3{overflow-wrap:break-word}
+.answer-link a{display:inline-block;margin-top:12px;color:var(--accent2);font-weight:650;text-decoration:underline;text-underline-offset:4px}
+.handbook-sticky{padding:18px;max-height:calc(100vh - 120px);overflow-y:auto}
+.handbook-contents summary{cursor:pointer;font-weight:700;min-height:44px}
+.handbook-toc{display:grid;gap:3px}
+.handbook-toc a{font-size:.875rem;line-height:1.4;padding:8px 0;border-bottom:1px solid var(--line);color:var(--accent2)}
+.table-scroll{overflow-x:auto;max-width:100%;margin:22px 0;-webkit-overflow-scrolling:touch}
+.handbook-reader .table-scroll .handbook-table{display:table;min-width:480px;margin:0}
+.handbook-reader math[display="block"]{padding:.35em 0}
+.answer-hero{padding-bottom:48px}.answer-hero h1{font-size:clamp(2.2rem,5vw,4rem);max-width:1000px}
+.answer-section{padding-top:25px}.answer-list{max-width:900px}
+.answer-note{margin-bottom:24px;color:var(--muted)}
+.answer-item{border:1px solid var(--line);border-radius:12px;background:var(--surface);margin:12px 0;overflow:hidden}
+.answer-item summary{padding:16px 20px;cursor:pointer;font-weight:650;min-height:48px}
+.answer-item>div{padding:4px 20px 20px}.answer-item p+p{margin-top:10px}
+.answer-item[open] summary{color:var(--accent2)}
+@media(max-width:950px){.handbook-sticky{max-height:none}}
+@media(max-width:900px){.no-js .nav{flex-wrap:wrap;padding:14px 0;gap:10px}.no-js #mainNav{width:100%;gap:6px 18px}.site-header #mainNav{max-height:calc(100dvh - 100px);overflow-y:auto}}
+@media(max-width:600px){h1{font-size:clamp(2.35rem,10vw,3.6rem)}.hero-copy{font-size:1rem}.handbook-layout{gap:28px}.resource-download-link{white-space:normal}.contact-list a{overflow-wrap:anywhere}.role-box{grid-template-columns:70px minmax(0,1fr)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+@media print{.site-header,.handbook-sticky,.handbook-hero,.skip-link,footer{display:none}.handbook-layout{display:block}.handbook-reader{max-width:none}.handbook-reading-section{padding:0}body{background:white;color:black}.table-scroll{overflow:visible}.answer-item{break-inside:avoid}}
