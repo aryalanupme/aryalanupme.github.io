@@ -1,0 +1,46 @@
+SAT PRACTICE FILE SETUP
+=======================
+
+The website code is already configured for stable PDF paths. Before publishing the Practice Library, copy FINAL PDF files into these folders using the exact filenames below.
+
+IMPORTANT
+- The website intentionally does NOT display a permanent question count for any practice set.
+- You can later replace a PDF with an expanded/revised version using the SAME filename. No HTML change is needed.
+- Keep editable DOCX files outside the public GitHub Pages site unless you intentionally want them public.
+- Geometry/triangle/circle PDFs can be replaced later after diagrams are improved. Keep the same filenames.
+
+assets/sat-resources/algebra/
+  Linear_Equations_Practice.pdf
+  Inequalities_Practice.pdf
+  Linear_Models_and_Interpretation_Practice.pdf
+  Coordinate_Geometry_and_Lines_Practice.pdf
+  Algebraic_Word_Problems_Practice.pdf
+
+assets/sat-resources/advanced-math/
+  Quadratic_Equations_Practice.pdf
+  Parabolas_and_Quadratic_Models_Practice.pdf
+  Exponential_Models_Practice.pdf
+  Nonlinear_Equations_and_Equivalent_Expressions_Practice.pdf
+  Polynomial_Division_Remainders_and_Factors_Practice.pdf
+  Functions_Evaluation_Composition_and_Structure_Practice.pdf
+  Function_Transformations_Practice.pdf
+  Function_Graphs_and_Interpretation_Practice.pdf
+  Advanced_Function_Reasoning_Practice.pdf
+
+assets/sat-resources/geometry-trigonometry/
+  Lines_and_Angles_Practice.pdf
+  Triangles_Similarity_and_Special_Triangles_Practice.pdf
+  Advanced_Triangle_Applications_Practice.pdf
+  Circles_Practice.pdf
+  Area_Surface_Area_and_Volume_Practice.pdf
+
+assets/sat-resources/problem-solving-data-analysis/
+  Ratios_Rates_Proportions_and_Units_Practice.pdf
+  Percentages_and_Percent_Change_Practice.pdf
+  Probability_and_Conditional_Probability_Practice.pdf
+  Measures_of_Center_Spread_and_Data_Sets_Practice.pdf
+  Sampling_Inference_and_Experimental_Design_Practice.pdf
+  Data_Displays_Scatterplots_and_Modeling_Practice.pdf
+
+HANDBOOK
+The current build publishes the handbook as sat-handbook.html, not as a public PDF download. The handbook PDF/DOCX is intentionally not included in the site assets.

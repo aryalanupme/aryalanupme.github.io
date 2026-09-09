@@ -1,28 +1,29 @@
-# Anup Aryal Portfolio - Current Full Code Update
+# Anup Aryal Portfolio — September 2026 Build
 
-This package was rebuilt from the current HTML/CSS/JS files supplied on 3 September 2026. It preserves those files as the baseline and adds the requested updates.
+This package contains the current website code and existing site assets.
 
-## Added in this update
-- Separate Technical CV and SAT Tutor CV links.
-- Technical CV: `assets/cv/anup-aryal-technical-cv.pdf`
-- SAT Tutor CV: `assets/cv/anup-aryal-sat-tutor-cv.pdf`
-- ICEF certificate linked at `assets/credentials/icef-us-agent-training-certificate.pdf`.
-- Credentials education order changed to M.A. Economics first, B.E. Mechanical Engineering second.
-- Greenhouse Dryer page expanded into four project sections:
-  1. 100 ft² National Innovation Center prototype
-  2. 250 ft² Sanga field installation
-  3. Manakamana Mahila Krishi Samuha community deployment
-  4. Modi Rural Municipality deployment of seven Solar Conduction Dryers
-- New greenhouse project images included under `assets/greenhouse-dryer/`.
+## Major changes in this build
+- Added a dedicated SAT Math Handbook web reader (`sat-handbook.html`). The handbook PDF/DOCX is **not** published in the site package.
+- Added a structured SAT Practice Library and four domain pages.
+- Practice cards do not show fixed question counts.
+- Added stable asset paths so practice PDFs can be replaced later without changing the HTML.
+- Removed temporary/fake testimonial placeholders.
+- Replaced development-stage Solar Water Lifting copy with public-facing text.
+- Added JavaScript-failure fallback for reveal animations and mobile navigation.
+- Improved mobile navigation, keyboard accessibility, focus states and Escape-to-close behavior.
+- Added lazy image loading, a 404 page, favicon, canonical links, Open Graph metadata, `robots.txt`, `sitemap.xml`, and Person structured data on the homepage.
+- Added responsive handling for handbook tables and MathML.
 
-## Important when installing
-This ZIP contains the full current CODE plus the NEW assets added in this update. It does not contain every older image already in your existing `assets` folder.
+## Before publishing SAT practice PDFs
+Read `ADD_SAT_FILES_BEFORE_DEPLOYING.txt` and copy only the final public PDFs into the listed `assets/sat-resources/...` folders.
 
-Therefore: extract/copy this package OVER your existing portfolio folder and allow updated code files to replace the old ones. Do not delete your existing `assets` folder first. Your older engineering, SAT, profile and credential images should remain there.
+The website intentionally does not require public DOCX files. Keep your editable DOCX masters privately unless you want visitors to download them.
 
-## GitHub workflow
-1. Copy/merge these files into the existing VS Code portfolio folder.
-2. Open the site with Live Server and check it.
-3. Source Control -> stage changes -> commit.
-4. Sync Changes / Push.
-5. GitHub Pages will update after deployment.
+## Handbook visibility
+The handbook is rendered as HTML on `sat-handbook.html`. There is no PDF download link and the handbook PDF is not included in this package. This reduces casual file redistribution, but content shown on a public website can still be copied, printed, screenshotted, or saved. GitHub Pages does not provide DRM or authenticated document access.
+
+## Deployment
+1. Copy this package over the existing site folder.
+2. Add final SAT practice PDFs at the exact paths listed in `ADD_SAT_FILES_BEFORE_DEPLOYING.txt`.
+3. Test locally with Live Server.
+4. Commit and push to the GitHub Pages repository.
